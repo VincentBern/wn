@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <title>App Frame</title>
+    <meta charset="utf-8">
+    <meta name="description" content="App Frame">
+    <meta name="author" content="VincentBern">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="icon" href="img/f.png?v=2">
+  </head>
+
+  <body>
+    <div class="container">
+          <div class="jumbotron">
+            <h1>Welcome to the App Frame</h1>
+            <p>A basic Node app frame to quickstart projects, including a few tools to help design.</p>
+
+            <div class="row">
+
+              <div class="col-md-12">
+                <h2>RGB to HEX</h2>
+              </div>
+
+              <div class="col-md-4">
+                <div class="input-group">
+                  <span class="input-group-addon red" id="redlabel">Red</span>
+                  <input type="text" class="form-control" placeholder="Red" aria-describedby="redlabel" id="Red">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="input-group">
+                  <span class="input-group-addon green" id="greenlabel">Green</span>
+                  <input type="text" class="form-control" placeholder="Green" aria-describedby="greenlabel" id="Green">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="input-group">
+                  <span class="input-group-addon blue" id="bluelabel">Blue</span>
+                  <input type="text" class="form-control" placeholder="Blue" aria-describedby="bluelabel" id="Blue">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default " type="button" id="Convert">Convert</button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Result" id="Result">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="col"></div>
+              </div>
+
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-12">
+                <h2>About</h2>
+              </div>
+
+              <div class="col-md-12">
+                <div class="enu">
+                  <ul>
+                    <li>Automated gulp building process</li>
+                    <li>Easy pluggin addon with NPM</li>
+                    <li>JS bundeler (put js browser files in src/index.js)</li>
+                    <li>CSS minifier(put files in css folder)</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/bundle.min.js"></script>
+  </body>
+
+</html>

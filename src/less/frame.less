@@ -1,0 +1,55 @@
+@basecolor: rgb(255,63,29);
+@white: rgb(255,255,255);
+@red: rgb(204,0,0);
+@green: rgb(102,204,0);
+@blue: rgb(0,153,204);
+
+
+
+.input-group{
+  margin-bottom: 10px;
+}
+
+.jumbotron{
+  margin-top: 10%;
+}
+
+.input-group-addon, .input-group-btn{
+  width: 100px;
+}
+
+.input-group-btn > .btn{
+  width: 100%;
+}
+.enu{
+  font-size: 13pt;
+}
+
+.col{
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+}
+
+@rgb:~".red, .green, .blue";
+
+@{rgb} {
+  color: @white;
+}
+
+.red{
+  background-color: @red;
+}
+.green{
+  background-color: @green;
+}
+.blue{
+  background-color: @blue;
+}
+
+@primaryBG: ~".bg-primary";
+
+@{primaryBG} {
+  background-color: @basecolor;
+  color: @white;
+}

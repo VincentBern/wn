@@ -1,0 +1,47 @@
+{
+  "name": "frame",
+  "version": "1.0.0",
+  "description": "Basic app frame",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentBern/frame.git"
+  },
+  "keywords": [
+    "Frame"
+  ],
+  "engines": {
+    "node": "6.9.*",
+    "npm": "4.0.*"
+  },
+  "author": "Vincent Bernard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VincentBern/frame/issues"
+  },
+  "homepage": "https://github.com/VincentBern/frame#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browserify": "^13.1.1",
+    "del": "^2.2.2",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.2.2",
+    "gulp-coffee": "^2.3.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-less": "^3.3.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulpzilla": "^4.0.1",
+    "jquery": "^3.1.1",
+    "less": "^2.7.1",
+    "run-sequence": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
