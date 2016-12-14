@@ -1,8 +1,36 @@
+body {
+  background-color: black;
+}
 .input-group {
   margin-bottom: 10px;
 }
+.wn-lg-w {
+  position: relative;
+  width: 90%;
+  opacity: 0.8;
+}
+.bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
 .jumbotron {
   margin-top: 10%;
+}
+h1 {
+  color: white;
+  font-zixe: 80pt;
 }
 .input-group-addon,
 .input-group-btn {
@@ -14,12 +42,17 @@
 .enu {
   font-size: 13pt;
 }
+.section {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
 .col {
   width: 50px;
   height: 50px;
   background-color: inherit;
 }
-.red, .green, .blue {
+p, h2, h3 {
   color: #ffffff;
 }
 .red {
@@ -34,4 +67,11 @@
 .bg-primary {
   background-color: #ff3f1d;
   color: #ffffff;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 6px;
 }

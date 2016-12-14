@@ -23,3 +23,45 @@ $(document).on("click", "#Convert",  function(){
 
   $(".col").attr("style", "background-color: #" + Result);
 });
+
+var vid = document.getElementById("bgvid"),
+pauseButton = document.getElementById("vidpause");
+muteButton = document.getElementById("vidmute");
+function vidFade() {
+    vid.classList.add("stopfade");
+}
+vid.addEventListener('ended', function() {
+    // only functional if "loop" is removed
+     vid.pause();
+	// to capture IE10
+	vidFade();
+});
+
+pauseButton.addEventListener("click", function() {
+    vid.classList.toggle("stopfade");
+	if (vid.paused) {
+    vid.play();
+		pauseButton.innerHTML = "Pause";
+	} else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+	}
+});
+
+muteButton.addEventListener("click", function() {
+  if (vid.muted) {
+    vid.muted = false;
+		muteButton.innerHTML = "Mute";
+	} else {
+    vid.muted = true;
+    muteButton.innerHTML = "Unmute";
+	}
+});
+
+$(document).on("click", "h1", function(){
+  var key = $(this).attr("aria-controls");
+  
+  setTimeout(function () {
+    document.getElementById(key).scrollIntoView();
+  }, 500);
+})

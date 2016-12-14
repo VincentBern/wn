@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VincentBern/frame.git"
+    "url": "git+https://github.com/VincentBern/wn.git"
   },
   "keywords": [
-    "Frame"
+    "WN"
   ],
   "engines": {
     "node": "6.9.*",
@@ -21,9 +21,9 @@
   "author": "Vincent Bernard",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VincentBern/frame/issues"
+    "url": "https://github.com/VincentBern/wn/issues"
   },
-  "homepage": "https://github.com/VincentBern/frame#readme",
+  "homepage": "https://github.com/VincentBern/wn#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "browserify": "^13.1.1",

@@ -3,86 +3,50 @@
 <html lang="en">
 
   <head>
-    <title>App Frame</title>
+    <title>WHITENAILS</title>
     <meta charset="utf-8">
-    <meta name="description" content="App Frame">
-    <meta name="author" content="VincentBern">
+    <meta name="description" content="WHITENAILS">
+    <meta name="author" content="WHITENAILS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/frame.css">
-    <link rel="icon" href="img/f.png?v=2">
+    <link rel="icon" href="img/wn.png">
   </head>
 
   <body>
-    <div class="container">
-          <div class="jumbotron">
-            <h1>Welcome to the App Frame</h1>
-            <p>A basic Node app frame to quickstart projects, including a few tools to help design.</p>
-
-            <div class="row">
-
-              <div class="col-md-12">
-                <h2>RGB to HEX</h2>
-              </div>
-
-              <div class="col-md-4">
-                <div class="input-group">
-                  <span class="input-group-addon red" id="redlabel">Red</span>
-                  <input type="text" class="form-control" placeholder="Red" aria-describedby="redlabel" id="Red">
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="input-group">
-                  <span class="input-group-addon green" id="greenlabel">Green</span>
-                  <input type="text" class="form-control" placeholder="Green" aria-describedby="greenlabel" id="Green">
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="input-group">
-                  <span class="input-group-addon blue" id="bluelabel">Blue</span>
-                  <input type="text" class="form-control" placeholder="Blue" aria-describedby="bluelabel" id="Blue">
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default " type="button" id="Convert">Convert</button>
-                  </span>
-                  <input type="text" class="form-control" placeholder="Result" id="Result">
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="col"></div>
-              </div>
-
-
-            </div>
-
-            <div class="row">
-
-              <div class="col-md-12">
-                <h2>About</h2>
-              </div>
-
-              <div class="col-md-12">
-                <div class="enu">
-                  <ul>
-                    <li>Automated gulp building process</li>
-                    <li>Easy pluggin addon with NPM</li>
-                    <li>JS bundeler (put js browser files in src/index.js)</li>
-                    <li>CSS minifier(put files in css folder)</li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-
+    <div class="container-fluid imp">
+      <img src="img/wn-lg-w.png" class="wn-lg-w">
+      <video playsinline muted autoplay loop poster="wn.png" id="bgvid" class="bgvid">
+          <source src="img/wn.mp4" type="video/mp4">
+      </video>
+      <button id="vidpause">Pause</button>
+      <button id="vidmute">Unmute</button>
+        <h1 role="button" data-toggle="collapse" href="#Tour" aria-expanded="false" aria-controls="Tour">TOUR</h1>
+        <div class="section collapse" id='Tour'>
+          <h2>December 09 - Quebec City</h2>
+          <p>Official release of the E.P. First Trip with The HazyTones and Bronco</p>
+          <h2>March 11 - Quebec City</h2>
+          <p>Come see us at Le Cercle with Mojo Wizard, HazyTones and Black Kux !</p>
+          <h2>April 14-15 - Rimouski</h2>
+          <p>Giveback fest </p>
+          <h2>Mai 19-21 - Montréal</h2>
+          <p>Pouzza fest</p>          
+        </div>
+        <h1 role="button" data-toggle="collapse" href="#Bio" aria-expanded="false" aria-controls="Bio">BIO</h1>
+        <div class="section collapse" id='Bio'>
+          <h3>Through a mutual love of Black Sabbath the boys of WhiteNails met one fateful evening. After a few beers and shots of whiskey they decided they needed to throw on the guitars and see what kind of noise would come forth. Hence the birth of WhiteNails. Six dudes with an appetite for loud, heavy rock and roll.</h3>
+        </div>
+        <h1 role="button" data-toggle="collapse" href="#Contact" aria-expanded="false" aria-controls="Contact">MORE</h1>
+        <div class="section collapse" id='Contact'>
+          <h2>Info</h2>
+          <p>whitenailsqc@gmail.com</p>
+          <h2>Facebook</h2>
+          <p><a href="https://www.facebook.com/WhiteNailsMusic">WhiteNailsMusic</a></p>
+          <h2>Youtube</h2>
+          <p><a href="https://www.youtube.com/channel/UCyqmahs4dGdpYW6eGuC4E4A">Whitenails Channel</a> </p>
         </div>
     </div>
+
     <script src="js/bundle.min.js"></script>
   </body>
 
